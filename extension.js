@@ -95,9 +95,9 @@
                 </block>
             `
         },
-        "ikb1_serial_read_string",
+        /*"ikb1_serial_read_string",
         "ikb1_serial_read_line",
-        "ikb1_serial_read_until",
+        "ikb1_serial_read_until",*/
         {
             xml: `
                 <sep gap="50"></sep>
