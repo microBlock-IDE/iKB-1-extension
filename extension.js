@@ -13,7 +13,7 @@
                 <block type="ikb1_digital_write">
                     <value name="value">
                         <shadow type="math_number">
-                            <field name="VALUE">1</field>
+                            <field name="NUM">1</field>
                         </shadow>
                     </value>
                 </block>
@@ -25,7 +25,7 @@
                 <block type="ikb1_motor">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -36,7 +36,7 @@
                 <block type="ikb1_servo">
                     <value name="angle">
                         <shadow type="math_number">
-                            <field name="VALUE">90</field>
+                            <field name="NUM">90</field>
                         </shadow>
                     </value>
                 </block>
@@ -47,7 +47,7 @@
                 <block type="ikb1_servo2">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -64,7 +64,9 @@
             xml: `
                 <block type="ikb1_serial_write">
                     <value name="data">
-                        <shadow type="basic_string"></shadow>
+                        <shadow type="text">
+                            <field name="TEXT">Hello!</field>
+                        </shadow>
                     </value>
                 </block>
             `
@@ -73,7 +75,9 @@
             xml: `
                 <block type="ikb1_serial_write_line">
                     <value name="data">
-                        <shadow type="basic_string"></shadow>
+                        <shadow type="text">
+                            <field name="TEXT">Hello!</field>
+                        </shadow>
                     </value>
                 </block>
             `
@@ -85,7 +89,7 @@
                 <block type="ikb1_serial_read">
                     <value name="count">
                         <shadow type="math_number">
-                            <field name="VALUE">1</field>
+                            <field name="NUM">1</field>
                         </shadow>
                     </value>
                 </block>
@@ -105,7 +109,7 @@
                 <block type="ikb1_motor_forward">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>        
@@ -116,7 +120,7 @@
                 <block type="ikb1_motor_backward">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -127,12 +131,12 @@
                 <block type="ikb1_motor_forward2">
                     <value name="speed1">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                     <value name="speed2">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -143,12 +147,12 @@
                 <block type="ikb1_motor_backward2">
                     <value name="speed1">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                     <value name="speed2">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -159,7 +163,7 @@
                 <block type="ikb1_motor_turn_left">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -170,7 +174,7 @@
                 <block type="ikb1_motor_spin_left">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
@@ -181,7 +185,7 @@
                 <block type="ikb1_motor_spin_right">
                     <value name="speed">
                         <shadow type="math_number">
-                            <field name="VALUE">50</field>
+                            <field name="NUM">50</field>
                         </shadow>
                     </value>
                 </block>
