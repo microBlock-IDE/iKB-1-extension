@@ -63,7 +63,7 @@ Blockly.Python['ikb1_serial_config'] = function(block) {
 
   var dropdown_baud = block.getFieldValue('baud');
   
-	var code = `ikbUART = UART(${dropdown_baud})\n`;
+	var code = `ikbUART = iKB1.UART(${dropdown_baud})\n`;
 	return code;
 };
 
