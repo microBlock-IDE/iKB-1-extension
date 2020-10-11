@@ -68,7 +68,7 @@ class Motor:
     def update(self):
         if self._dir == self.FORWARD:
             d = self._speed
-        elif self._dir == self.BACKWORD:
+        elif self._dir == self.BACKWARD:
             d = ((~self._speed) & 0xFF) + 1
         else:
             d = 0
