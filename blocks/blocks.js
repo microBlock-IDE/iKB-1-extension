@@ -164,7 +164,6 @@ Blockly.Blocks['ikb1_serial_read_one_byte'] = {
 	}
 };
 
-/*
 Blockly.Blocks['ikb1_serial_read'] = {
 	init: function() {
 		this.appendValueInput("count")
@@ -179,7 +178,6 @@ Blockly.Blocks['ikb1_serial_read'] = {
 		this.setHelpUrl("");
 	}
 };
-*/
 
 Blockly.Blocks['ikb1_serial_read_string'] = {
 	init: function() {

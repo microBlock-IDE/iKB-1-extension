@@ -99,13 +99,14 @@ Blockly.Python['ikb1_serial_read_one_byte'] = function(block) {
 	return [code, Blockly.Python.ORDER_NONE];
 };
 
-/*
 Blockly.Python['ikb1_serial_read'] = function(block) {
-	var value_count = Blockly.Python.valueToCode(block, 'count', Blockly.Python.ORDER_ATOMIC);
-	var code = 'ikb.uart_read(' + value_count + ')';
+  Blockly.Python.definitions_['import_iKB1'] = 'import iKB1';
+  
+  var value_count = Blockly.Python.valueToCode(block, 'count', Blockly.Python.ORDER_ATOMIC);
+  
+	var code = `ikbUART.read(${value_count})`;
 	return [code, Blockly.Python.ORDER_NONE];
 };
-*/
 
 Blockly.Python['ikb1_serial_read_string'] = function(block) {
   Blockly.Python.definitions_['import_iKB1'] = 'import iKB1';
