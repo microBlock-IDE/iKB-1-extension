@@ -72,7 +72,7 @@ Blockly.Python['ikb1_serial_write'] = function(block) {
 
   var value_data = Blockly.Python.valueToCode(block, 'data', Blockly.Python.ORDER_ATOMIC) || 0;
   
-	var code = `ikbUART.write(bytes(${value_data}))\n`;
+	var code = `ikbUART.write((${value_data}).encode())\n`;
 	return code;
 };
 
@@ -81,7 +81,7 @@ Blockly.Python['ikb1_serial_write_line'] = function(block) {
 
   var value_data = Blockly.Python.valueToCode(block, 'data', Blockly.Python.ORDER_ATOMIC) || '';
   
-	var code = `ikbUART.write(bytes(${value_data}) + b'\\n')\n`;
+	var code = `ikbUART.write((${value_data} + '\\n').encode())\n`;
 	return code;
 };
 
