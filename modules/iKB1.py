@@ -80,6 +80,7 @@ class Motor:
         return self._dir
 
     def speed(self, speed=None):
+        speed = int(speed)
         if speed != None:
             if speed > 100:
                 speed = 100
@@ -99,6 +100,7 @@ class Servo:
     
     def angle(self, angle=None):
         if angle != None:
+            angle = int(angle)
             if angle < 0:
                 angle = 0
             if angle > 200:
@@ -111,13 +113,13 @@ class UART:
     def __init__(self, baudrate=9600, timeout=0.1, timeout_char=0.05):
         self.baudToBit = 0
         if baudrate == 2400:
-            self.baudToBit = 0;
+            self.baudToBit = 0
         elif baudrate == 9600:
-            self.baudToBit = 1;
+            self.baudToBit = 1
         elif baudrate == 57600:
-		    self.baudToBit = 2;
+		    self.baudToBit = 2
         elif baudrate == 115200:
-		    self.baudToBit = 3;
+		    self.baudToBit = 3
 
     def available(self):
         write([ 0x01 ])
