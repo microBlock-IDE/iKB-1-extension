@@ -13,7 +13,7 @@ Blockly.Python['ikb1_digital_write'] = function(block) {
 	var dropdown_ch = block.getFieldValue('ch');
   var value_value = Blockly.Python.valueToCode(block, 'value', Blockly.Python.ORDER_ATOMIC) || 0;
   
-	var code = `iKB1.Pin(${dropdown_ch}, mode=iKB1.Pin.OUT).value(${value_value})`;
+	var code = `iKB1.Pin(${dropdown_ch}, mode=iKB1.Pin.OUT).value(${value_value})\n`;
 	return code;
 };
 
@@ -139,7 +139,8 @@ Blockly.Python['ikb1_motor_forward'] = function(block) {
 	var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.FORWARD); m1.speed(${value_speed}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed}); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -151,7 +152,8 @@ Blockly.Python['ikb1_motor_backward'] = function(block) {
   var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.BACKWARD); m1.speed(${value_speed}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.BACKWARD); m2.speed(${value_speed}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.BACKWARD); m2.speed(${value_speed}); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -163,7 +165,8 @@ Blockly.Python['ikb1_motor_turn_left'] = function(block) {
 	var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.FORWARD); m1.speed(0); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed}); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -175,7 +178,8 @@ Blockly.Python['ikb1_motor_turn_right'] = function(block) {
 	var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.FORWARD); m1.speed(${value_speed}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(0); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(0); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -187,7 +191,8 @@ Blockly.Python['ikb1_motor_spin_left'] = function(block) {
 	var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.BACKWARD); m1.speed(${value_speed}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed}); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -199,7 +204,8 @@ Blockly.Python['ikb1_motor_spin_right'] = function(block) {
 	var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.FORWARD); m1.speed(${value_speed}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.BACKWARD); m2.speed(${value_speed}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.BACKWARD); m2.speed(${value_speed}); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -209,7 +215,8 @@ Blockly.Python['ikb1_motor_stop'] = function(block) {
 	var code = '';
 	code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.STOP); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.STOP); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.STOP); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -222,7 +229,8 @@ Blockly.Python['ikb1_motor_forward2'] = function(block) {
 	var code = '';
   code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.FORWARD); m1.speed(${value_speed1}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed2}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.FORWARD); m2.speed(${value_speed2}); m2.update()`;
+  code += '\n';
 	return code;
 };
 
@@ -235,6 +243,7 @@ Blockly.Python['ikb1_motor_backward2'] = function(block) {
 	var code = '';
 	code += `m1 = iKB1.Motor(1); m1.dir(iKB1.Motor.BACKWARD); m1.speed(${value_speed1}); m1.update()`;
   code += '; ';
-	code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.BACKWARD); m2.speed(${value_speed2}); m2.update()`;
+  code += `m2 = iKB1.Motor(2); m2.dir(iKB1.Motor.BACKWARD); m2.speed(${value_speed2}); m2.update()`;
+  code += '\n';
 	return code;
 };
