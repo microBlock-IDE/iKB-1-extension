@@ -52,7 +52,7 @@ class ADC:
 
 class Motor:
     FORWARD = 1
-    BACKWORD = 2
+    BACKWARD = 2
     STOP = 3
 
     def __init__(self, m, dir=STOP, speed=0):
