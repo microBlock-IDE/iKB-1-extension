@@ -3,7 +3,12 @@ from time import sleep
 
 IKB_1_ADDR = 0x48
 
-i2c1 = I2C(1, scl=Pin(5), sda=Pin(4), freq=100000)
+machine = os.uname().machine
+if "KidBright32" in machine:
+    i2c1 = I2C(1, scl=Pin(5), sda=Pin(4), freq=100000)
+else:
+    i2c1 = I2C(0, scl=Pin(22), sda=Pin(21), freq=100000)
+
 
 def write(wd):
     i2c1.writeto(IKB_1_ADDR, bytes(wd))
