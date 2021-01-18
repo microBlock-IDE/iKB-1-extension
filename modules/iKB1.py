@@ -1,5 +1,6 @@
 from machine import Pin, I2C
 from time import sleep
+import os
 
 IKB_1_ADDR = 0x48
 
