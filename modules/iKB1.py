@@ -49,7 +49,7 @@ class Pin:
 
 class ADC:
     def __init__(self, pin):
-        self.pin = pin.pin
+        self.pin = pin
     
     def read(self):
         write([ 0x08 + (self.pin << 4) ])
