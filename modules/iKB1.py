@@ -52,7 +52,7 @@ class ADC:
         self.pin = pin
     
     def read(self):
-        write([ 0x08 + (self.pin << 4) ])
+        write([ 0x80 + (self.pin << 4) ])
         sleep(0.1)
         d = read(2)
         print(d)
