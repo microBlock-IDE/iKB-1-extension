@@ -3,7 +3,7 @@
     description: "Universal I/O board",
     author: "microBlock",
     category: "Signal Input/Output",
-    version: "1.0.1",
+    version: "1.0.2",
     icon: "/static/icon.png", // Category icon
     color: "#191e3e", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
