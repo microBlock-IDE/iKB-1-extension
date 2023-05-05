@@ -3,10 +3,11 @@
     description: "Universal I/O board",
     author: "microBlock",
     category: "Signal Input/Output",
-    version: "1.0.2",
+    version: "1.1.0",
     icon: "/static/icon.png", // Category icon
     color: "#191e3e", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
+        "ikb1_select_i2c_address",
         "ikb1_digital_read",
         {
             xml: `
