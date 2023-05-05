@@ -1,4 +1,6 @@
 Blockly.Python['ikb1_select_i2c_address'] = function(block) {
+  Blockly.Python.definitions_['import_iKB1'] = 'import iKB1';
+  
   var dropdown_addr = block.getFieldValue('addr');
   var code = `iKB1.IKB_1_ADDR = ${dropdown_addr}\n`;
   return code;
