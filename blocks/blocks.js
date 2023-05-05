@@ -5,7 +5,7 @@ Blockly.Blocks['ikb1_select_i2c_address'] = {
 			.appendField(new Blockly.FieldDropdown([["0x48", "0x48"], ["0x49", "0x94"]]), "addr");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
-		this.setColour(180);
+		this.setColour("#191e3e");
 		this.setTooltip("");
 		this.setHelpUrl("");
 	}
