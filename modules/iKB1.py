@@ -127,9 +127,9 @@ class UART:
         elif baudrate == 9600:
             self.baudToBit = 1
         elif baudrate == 57600:
-		    self.baudToBit = 2
+            self.baudToBit = 2
         elif baudrate == 115200:
-		    self.baudToBit = 3
+            self.baudToBit = 3
 
     def available(self):
         write([ 0x01 ])
@@ -146,4 +146,4 @@ class UART:
     def write(self, buf):
         write_byte(bytes([ 0x04 | self.baudToBit ]) + buf)
 
-reset()
+#reset()
